@@ -88,6 +88,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
                         <TextField
                             sx={{ width: '90%', m: 1 }}
                             id="outlined-size-small"
+                            label='Patient Name'
                             name='patientName'
                             onBlur={handleOnBlur}
                             defaultValue={user.displayName}
@@ -96,6 +97,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
                         <TextField
                             sx={{ width: '90%', m: 1 }}
                             id="outlined-size-small"
+                            label='Patient Email'
                             name='email'
                             onBlur={handleOnBlur}
                             defaultValue={user.email}
@@ -104,9 +106,10 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
                         <TextField
                             sx={{ width: '90%', m: 1 }}
                             id="outlined-size-small"
+                            label='Phone Number'
                             name='phone'
                             onBlur={handleOnBlur}
-                            defaultValue="Phone Number"
+
                             size="small"
                         />
                         <TextField

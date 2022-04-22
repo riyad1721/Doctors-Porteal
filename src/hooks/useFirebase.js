@@ -59,6 +59,7 @@ const useFirebase = () => {
             .then((result) => {
 
                 const user = result.user;
+                setAuthError('');
 
             }).catch((error) => {
                 setAuthError(error.message);
